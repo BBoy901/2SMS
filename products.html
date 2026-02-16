@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | 2SMS Company Limited</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">2SMS</a>
+            <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="request-quote.html">Request Quote</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://wa.me/255685873936" class="btn btn-whatsapp" target="_blank">WhatsApp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+<section class="page-hero">
+    <div class="container">
+        <h1>Our Products</h1>
+        <p>Premium motor oils and lubricants</p>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="products-toolbar">
+            <form class="search-form" id="search-form">
+                <input type="text" id="product-search" placeholder="Search products..." autocomplete="off">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+            <div class="category-filters">
+                <button type="button" class="filter-btn active" data-category="">All</button>
+                <button type="button" class="filter-btn" data-category="engine-oils">Engine Oils</button>
+                <button type="button" class="filter-btn" data-category="gear-oils">Gear Oils</button>
+                <button type="button" class="filter-btn" data-category="hydraulic-oils">Hydraulic Oils</button>
+                <button type="button" class="filter-btn" data-category="greases">Greases</button>
+                <button type="button" class="filter-btn" data-category="industrial-lubricants">Industrial Lubricants</button>
+            </div>
+        </div>
+        <div class="products-grid" id="products-grid">
+            <div class="product-card" data-category="engine-oils" data-name="Premium Engine Oil 5W-30" data-desc="Full synthetic engine oil for modern gasoline engines. Excellent protection and fuel economy.">
+                <div class="product-image"><div class="product-placeholder">PE</div></div>
+                <div class="product-info">
+                    <span class="product-category">Engine Oils</span>
+                    <h3>Premium Engine Oil 5W-30</h3>
+                    <p class="product-size">Sizes: 4L, 20L</p>
+                    <p class="product-desc">Full synthetic engine oil for modern gasoline engines. Excellent protection and fuel economy.</p>
+                    <a href="request-quote.html?product=Premium+Engine+Oil+5W-30" class="btn btn-outline btn-sm">Request Quote</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="engine-oils" data-name="Diesel Engine Oil 15W-40" data-desc="Heavy-duty diesel engine oil for trucks and commercial vehicles.">
+                <div class="product-image"><div class="product-placeholder">DE</div></div>
+                <div class="product-info">
+                    <span class="product-category">Engine Oils</span>
+                    <h3>Diesel Engine Oil 15W-40</h3>
+                    <p class="product-size">Sizes: 4L, 20L, 200L</p>
+                    <p class="product-desc">Heavy-duty diesel engine oil for trucks and commercial vehicles.</p>
+                    <a href="request-quote.html?product=Diesel+Engine+Oil+15W-40" class="btn btn-outline btn-sm">Request Quote</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="gear-oils" data-name="Manual Transmission Oil 75W-90" data-desc="Synthetic gear oil for manual transmissions.">
+                <div class="product-image"><div class="product-placeholder">MT</div></div>
+                <div class="product-info">
+                    <span class="product-category">Gear Oils</span>
+                    <h3>Manual Transmission Oil 75W-90</h3>
+                    <p class="product-size">Sizes: 1L, 4L</p>
+                    <p class="product-desc">Synthetic gear oil for manual transmissions.</p>
+                    <a href="request-quote.html?product=Manual+Transmission+Oil+75W-90" class="btn btn-outline btn-sm">Request Quote</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="hydraulic-oils" data-name="Hydraulic Fluid AW 46" data-desc="Anti-wear hydraulic fluid for industrial machinery.">
+                <div class="product-image"><div class="product-placeholder">HF</div></div>
+                <div class="product-info">
+                    <span class="product-category">Hydraulic Oils</span>
+                    <h3>Hydraulic Fluid AW 46</h3>
+                    <p class="product-size">Sizes: 20L, 200L</p>
+                    <p class="product-desc">Anti-wear hydraulic fluid for industrial machinery.</p>
+                    <a href="request-quote.html?product=Hydraulic+Fluid+AW+46" class="btn btn-outline btn-sm">Request Quote</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="greases" data-name="Multi-Purpose Grease EP2" data-desc="Extreme pressure grease for bearings and joints.">
+                <div class="product-image"><div class="product-placeholder">MP</div></div>
+                <div class="product-info">
+                    <span class="product-category">Greases</span>
+                    <h3>Multi-Purpose Grease EP2</h3>
+                    <p class="product-size">Sizes: 400g, 1kg, 16kg</p>
+                    <p class="product-desc">Extreme pressure grease for bearings and joints.</p>
+                    <a href="request-quote.html?product=Multi-Purpose+Grease+EP2" class="btn btn-outline btn-sm">Request Quote</a>
+                </div>
+            </div>
+        </div>
+        <p class="no-results" id="no-results" style="display:none;">No products found. Try adjusting your search or filters.</p>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>2SMS Company Limited</h3>
+                    <p>Your trusted partner in motor oils and lubricants distribution across Tanzania.</p>
+                    <p class="hours">Available 24/7</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="request-quote.html">Request Quote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Temeke, Dar es Salaam, Tanzania (Near Alhikima Girls Secondary School)</p>
+                    <p><a href="tel:+255685873936">+255 685 873 936</a></p>
+                    <p><a href="mailto:f9mnyoloka@gmail.com">f9mnyoloka@gmail.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/255685873936" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+                        <a href="mailto:f9mnyoloka@gmail.com" aria-label="Email">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2SMS Company Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/255685873936" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
