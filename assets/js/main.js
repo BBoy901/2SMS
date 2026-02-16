@@ -10,6 +10,19 @@ document.addEventListener('DOMContentLoaded', function() {
         quoteForm.addEventListener('submit', handleQuoteSubmitDemo);
     }
 
+    const btnEditRequest = document.getElementById('btn-edit-request');
+    if (btnEditRequest) {
+        btnEditRequest.addEventListener('click', function() {
+            const formSuccess = document.getElementById('form-success');
+            const form = document.getElementById('quote-form');
+            if (formSuccess && form) {
+                formSuccess.style.display = 'none';
+                form.style.display = 'block';
+                form.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
     const productSelect = document.getElementById('product_needed');
     const productCustom = document.getElementById('product_custom');
     if (productSelect && productCustom) {
@@ -38,6 +51,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    const waToggle = document.getElementById('wa-float-toggle');
+    const waWrap = document.getElementById('wa-float-wrap');
+    if (waToggle && waWrap) {
+        waToggle.addEventListener('click', function() {
+            waWrap.classList.toggle('open');
+            waToggle.setAttribute('aria-expanded', waWrap.classList.contains('open'));
+        });
+        document.addEventListener('click', function(e) {
+            if (!waWrap.contains(e.target)) {
+                waWrap.classList.remove('open');
+                waToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
 
     const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
     const observer = new IntersectionObserver((entries) => {
